@@ -5,21 +5,21 @@
 class Rexo < Formula
   desc "REXO — Runtime for Execution & eXchange Orchestration."
   homepage "https://github.com/lanroo/rexo"
-  version "0.0.9"
+  version "0.0.10"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lanroo/rexo/releases/download/v0.0.9/rexo_darwin_amd64.tar.gz"
-      sha256 "5b96f8b973a4130496ba09c8160a1ebd3600283debe7db2ecbdb1bd441aaf277"
+      url "https://github.com/lanroo/rexo/releases/download/v0.0.10/rexo_darwin_amd64.tar.gz"
+      sha256 "8b50a8c5b7135be2427bf944cc4e0fb315946769677c36ddce551be4da7bba13"
 
       define_method(:install) do
         bin.install "rexo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lanroo/rexo/releases/download/v0.0.9/rexo_darwin_arm64.tar.gz"
-      sha256 "b3cb7891495db5677f2e7e0f5e54ce9fd5ae0c4844841fdbd894080610e4bb15"
+      url "https://github.com/lanroo/rexo/releases/download/v0.0.10/rexo_darwin_arm64.tar.gz"
+      sha256 "b6d43b7da3797118bde129e10c90ac11b64ac15f4eb5dad7a5cb894b29128c3c"
 
       define_method(:install) do
         bin.install "rexo"
@@ -29,15 +29,15 @@ class Rexo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lanroo/rexo/releases/download/v0.0.9/rexo_linux_amd64.tar.gz"
-      sha256 "315305bfa77773dff6a1106462cb731210b2d64ad3238c03c9ee3040963b24e8"
+      url "https://github.com/lanroo/rexo/releases/download/v0.0.10/rexo_linux_amd64.tar.gz"
+      sha256 "169b2b5f456b92ec825a4e45fc95af75d3c58a7636044d43823222b54bbb9dc1"
       define_method(:install) do
         bin.install "rexo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lanroo/rexo/releases/download/v0.0.9/rexo_linux_arm64.tar.gz"
-      sha256 "74286f0bb79b35dd22acf3e2eeb4faf48a31d5bf840abe71f93822c19f10a7aa"
+      url "https://github.com/lanroo/rexo/releases/download/v0.0.10/rexo_linux_arm64.tar.gz"
+      sha256 "b30cd9a547e4557f24c74cf19034951f3c6d4157f7a6dd903cf52823bca806fd"
       define_method(:install) do
         bin.install "rexo"
       end
